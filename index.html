@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.0/css/all.min.css"
+        integrity="sha384-..." crossorigin="anonymous">
+    <title>Spotify - Web Player</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./assets/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="main">
+        <div class="sidebar">
+            <div class="nav">
+                <div class="nav-option" style="opacity: 1;">
+                    <i class="fas fa-home"></i>
+                    <a href="#" style="background-color: #121212;">Home</a>
+                </div>
+                <div class="nav-option">
+                    <i class="fas fa-search"></i>
+                    <a href="#">Search</a>
+                </div>
+            </div>
+            <div class="library">
+                <div class="options">
+                    <div class="lib-option nav-option">
+                        <img src="./assets/library_icon.png">
+                        <a href="#">Your Library</a>
+                    </div>
+                    <div class="icons">
+                        <i class="fa-solid fa-plus" style="background-color: #121212;"></i>
+                        <i class="fa-solid fa-arrow-right" style="background-color: #121212;"></i>
+                    </div>
+                </div>
+                <div class="lib-box">
+                    <div class="box">
+                        <p class="box-p1">Create your first playlist</p>
+                        <p class="box-p2" style="background-color: #232323;">It's easy, we'll help you</p>
+                        <button class="badge">create playlist</button>
+                    </div>
+                </div>
+                <div class="lib-box">
+                    <div class="box">
+                        <p class="box-p1">Let's find some podcasts to follow</p>
+                        <p class="box-p2">We'll keep you updated on new episodes</p>
+                        <button class="badge">Browse podcasts</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div class="sticky-nav">
+                <div class="sticky-nav-icons">
+                    <img src="./assets/backward_icon.png">
+                    <img src="./assets/forward_icon.png" class="hide">
+                </div>
+                <div class="sticky-nav-options">
+                    <button class="badge">Upgrade</button>
+                    <button class="badge-install">
+                        <i class="fa-regular fa-circle-down"></i> Install App</button>
+                    <p><i class="fa-regular fa-user nav-item" id="i2"></i></p>
+                </div>
+            </div>
+
+            <h2>Recently Played</h2>
+            <div class="cards-container">
+                <div class="card" data-song="assets/song1.mp3,assets/song2.mp3">
+                    <img src="assets/card1img.jpeg" class="card-img">
+                    <p class="card-title">Top 50 - Global</p>
+                    <p class="card-info">Your daily updates of the most played tracks</p>
+                </div>
+            </div>
+
+            <h2 class="two">Trending now near you</h2>
+            <div class="cards-container2">
+                <div class="card2" data-song="assets/song2.mp3,assets/song3.mp3">
+                    <img src="assets/card2img.jpeg" class="card-img">
+                    <p class="card-title">Top 50 - Global</p>
+                    <p class="card-info">Your daily updates of the most played tracks</p>
+                </div>
+
+                <div class="card2" data-song="assets/song3.mp3,assets/song2.mp3">
+                    <img src="assets/card3img.jpeg" class="card-img">
+                    <p class="card-title">Top 50 - Global</p>
+                    <p class="card-info">Your daily updates of the most played tracks</p>
+                </div>
+
+                <div class="card2" data-song="assets/song4.mp3,assets/song1.mp3">
+                    <img src="assets/card4img.jpeg" class="card-img">
+                    <p class="card-title">Top 50 - Global</p>
+                    <p class="card-info">Your daily updates of the most played tracks</p>
+                </div>
+
+                <div class="card2" data-song="assets/song5.mp3,assets/song3.mp3">
+                    <img src="assets/card2img.jpeg" class="card-img">
+                    <p class="card-title">Top 50 - Global</p>
+                    <p class="card-info">Your daily updates of the most played tracks</p>
+                </div>
+
+                <div class="card2" data-song="assets/song6.mp3,assets/song2.mp3">
+                    <img src="assets/card3img.jpeg" class="card-img">
+                    <p class="card-title">Top 50 - Global</p>
+                    <p class="card-info">Your daily updates of the most played tracks</p>
+                </div>
+
+                <h2 class="two">Featured Charts</h2>
+                <div class="cards-container3">
+                    <div class="card2" data-song="assets/song7.mp3,assets/song2.mp3">
+                        <img src="assets/card5img.jpeg" class="card-img">
+                        <p class="card-title">Top 50 - Global</p>
+                        <p class="card-info">Your daily updates of the most played tracks</p>
+                    </div>
+
+                    <div class="card2" data-song="assets/song8.mp3,assets/song1.mp3">
+                        <img src="assets/card6img.jpeg" class="card-img">
+                        <p class="card-title">Top 50 - Global</p>
+                        <p class="card-info">Your daily updates of the most played tracks</p>
+                    </div>
+
+                    <div class="card2" data-song="assets/song4.mp3,assets/song6.mp3">
+                        <img src="assets/card1img.jpeg" class="card-img">
+                        <p class="card-title">Top 50 - Global</p>
+                        <p class="card-info">Your daily updates of the most played tracks</p>
+                    </div>
+
+                    <div class="card2" data-song="assets/song1.mp3,assets/song2.mp3">
+                        <img src="assets/card1img.jpeg" class="card-img">
+                        <p class="card-title">Top 50 - Global</p>
+                        <p class="card-info">Your daily updates of the most played tracks</p>
+                    </div>
+
+                    <div class="card2" data-song="assets/song2.mp3,song1">
+                        <img src="assets/card1img.jpeg" class="card-img">
+                        <p class="card-title">Top 50 - Global</p>
+                        <p class="card-info">Your daily updates of the most played tracks</p>
+                    </div>
+                </div>
+            </div>
+            <br><br><br><br>
+
+            <div class="footer">
+                <div class="line">
+                </div>
+            </div>
+        </div>
+
+        <!-- Music Player Section -->
+        <div class="music-player">
+            <div class="album">
+                <img src="assets/card2img.jpeg" alt="Album Cover" class="album-cover">
+            </div>
+            <div class="player">
+                <div class="player-controls">
+                    <!-- Previous Button -->
+                    <img src="assets/left-arrow.png" class="player-control-icon" id="prevButton"
+                        style="width: 30px; height: 30px;">
+
+                    <!-- Play/Pause Button (Set Initial Icon to Play) -->
+                    <img src="assets/player_icon3.png" class="player-control-icon" id="playPauseButton"
+                        style="width: 30px; height: 30px;">
+
+                    <!-- Next Button -->
+                    <img src="assets/right-arrow.png" class="player-control-icon" id="nextButton"
+                        style="width: 30px; height: 30px;">
+                </div>
+                <div class="playback-bar">
+                    <span class="curr-time">00:00</span>
+                    <input type="range" min="0" max="100" class="progress-bar" step="1" id="progressBar">
+                    <span class="tot-time">4:30</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        let isPlaying = false;
+let currentSong = new Audio();
+let currentPlaylist = [];
+let currentSongIndex = 0;
+
+// Query time and progress elements
+const currTime = document.querySelector('.curr-time');
+const totTime = document.querySelector('.tot-time');
+const progressBar = document.querySelector('#progressBar');
+
+// Function to load and play the current song
+const playCurrentSong = () => {
+    if (currentPlaylist.length > 0) {
+        currentSong.src = currentPlaylist[currentSongIndex];
+        currentSong.load(); // Load the new song
+        currentSong.play(); // Start playback
+        isPlaying = true;
+        playPauseButton.src = "assets/pause3.png";
+
+        // Update album cover dynamically
+        let albumCoverImage = document.querySelectorAll('.card, .card2')[currentSongIndex].querySelector('img').src;
+        document.querySelector('.album-cover').src = albumCoverImage;
+    }
+};
+
+// Update time and progress bar dynamically
+function updateSongTime() {
+    if (currentSong.readyState > 0) { // Ensure metadata is available
+        let progress = (currentSong.currentTime / currentSong.duration) * 100;
+        progressBar.value = progress;
+
+        // Update current time
+        let minutes = Math.floor(currentSong.currentTime / 60);
+        let seconds = Math.floor(currentSong.currentTime % 60);
+        currTime.textContent = `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
+    }
+}
+
+// Update total time when metadata is loaded
+currentSong.addEventListener('loadedmetadata', () => {
+    let totalMinutes = Math.floor(currentSong.duration / 60);
+    let totalSeconds = Math.floor(currentSong.duration % 60);
+    totTime.textContent = `${totalMinutes}:${totalSeconds < 10 ? '0' : ''}${totalSeconds}`;
+});
+
+// Listen for "Next" and "Previous" buttons
+nextButton.addEventListener('click', () => {
+    if (currentPlaylist.length > 0) {
+        currentSongIndex = (currentSongIndex + 1) % currentPlaylist.length;
+        playCurrentSong();
+    }
+});
+
+prevButton.addEventListener('click', () => {
+    if (currentPlaylist.length > 0) {
+        currentSongIndex = (currentSongIndex - 1 + currentPlaylist.length) % currentPlaylist.length;
+        playCurrentSong();
+    }
+});
+
+// Play/Pause toggle
+playPauseButton.addEventListener('click', () => {
+    if (isPlaying) {
+        currentSong.pause();
+        playPauseButton.src = "assets/player_icon3.png"; // Play icon
+    } else {
+        currentSong.play();
+        playPauseButton.src = "assets/pause3.png"; // Pause icon
+    }
+    isPlaying = !isPlaying;
+});
+
+// Time and progress bar updates
+currentSong.addEventListener('timeupdate', updateSongTime);
+
+// Scrubbing functionality
+progressBar.addEventListener('input', () => {
+    currentSong.currentTime = (progressBar.value / 100) * currentSong.duration;
+});
+
+// Load playlist and play on card click
+document.querySelectorAll('.card, .card2').forEach((card) => {
+    card.addEventListener('click', () => {
+        currentPlaylist = card.getAttribute('data-song').split(',');
+        currentSongIndex = 0;
+        playCurrentSong();
+    });
+});
+
+
+    </script>
+</body>
+
+</html>
